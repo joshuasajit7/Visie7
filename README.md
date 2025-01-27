@@ -45,7 +45,7 @@ Accessibility Features
 
 Project Structure
 
-│
+
 ├── App.js          
 ├── App.css         
 ├── index.js        
