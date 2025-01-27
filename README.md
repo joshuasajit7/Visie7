@@ -45,7 +45,6 @@ Accessibility Features
 
 Project Structure
 
-src/
 │
 ├── App.js          
 ├── App.css         
