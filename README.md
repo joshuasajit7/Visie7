@@ -47,9 +47,9 @@ Project Structure
 
 src/
 │
-├── App.js           // Main application logic
-├── App.css          // Styling for the application
-├── index.js         // Entry point of the application
+├── App.js          
+├── App.css         
+├── index.js        
 
 Future Enhancements
 
