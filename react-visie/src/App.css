@@ -1,0 +1,123 @@
+/* Modern color palette */
+:root {
+  --primary: #FF6B35;
+  --primary-dark: #E84A1C;
+  --secondary: #FFE0D6;
+  --accent: #FF8C42;
+  --text: #2D3142;
+  --background: #FFF9F5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 32px;
+  background-color: var(--background);
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-2px);
+}
+
+h1 {
+  color: var(--primary);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 24px auto;
+  width: 100%;
+  padding: 12px;
+  border: 2px dashed var(--accent);
+  border-radius: 8px;
+  background: var(--secondary);
+  transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+  border-color: var(--primary);
+}
+
+button {
+  display: block;
+  margin: 28px auto;
+  padding: 14px 40px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+button:hover:not(:disabled) {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(232, 74, 28, 0.2);
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  resize: vertical;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  min-height: 120px;
+  background-color: rgb(225, 225, 225);
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.2);
+}
+
+textarea[readonly] {
+  background-color: var(--secondary);
+  border-color: var(--accent);
+}
+
+/* Add smooth scrolling to the page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 16px;
+  }
+}
